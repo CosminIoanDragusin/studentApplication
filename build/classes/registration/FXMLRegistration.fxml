@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registration.FXMLRegistrationController">
+   <children>
+      <AnchorPane layoutX="424.0" prefHeight="552.0" prefWidth="379.0" styleClass="login-card" stylesheets="@../css/registration.css">
+         <children>
+            <Label fx:id="labelProiect" alignment="CENTER" layoutX="51.0" layoutY="129.0" prefHeight="251.0" prefWidth="312.0" text="Proiect" textFill="#1e719a">
+               <font>
+                  <Font size="72.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnExit" layoutX="380.0" layoutY="1.0" mnemonicParsing="false" onAction="#exit" prefHeight="27.0" prefWidth="33.0" styleClass="btnExit" stylesheets="@../css/login.css" />
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="383.0" layoutY="1.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exit.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="btnExit" />
+                  <String fx:value="exitImage" />
+               </styleClass>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="552.0" prefWidth="424.0" styleClass="login-bg" stylesheets="@../css/registration.css">
+         <children>
+            <TextField fx:id="reg_username" layoutX="96.0" layoutY="174.0" prefHeight="36.0" prefWidth="193.0" promptText="Username..." styleClass="textfield-design" stylesheets="@../css/registration.css" />
+            <PasswordField fx:id="reg_password" layoutX="96.0" layoutY="270.0" prefHeight="36.0" prefWidth="193.0" promptText="Password..." styleClass="textfield-design" stylesheets="@../css/registration.css" />
+            <Button fx:id="btnRegister" layoutX="119.0" layoutY="322.0" mnemonicParsing="false" onAction="#Register" prefHeight="64.0" prefWidth="149.0" styleClass="button-design" stylesheets="@../css/registration.css" text="Register" />
+            <Hyperlink fx:id="hyperYourAccount" layoutX="130.0" layoutY="397.0" onAction="#toLogin" styleClass="hypertext-design" stylesheets="@../css/registration.css" text="Login to your account?">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="150.0" layoutY="125.0" text="Register Up">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="reg_email" layoutX="96.0" layoutY="222.0" prefHeight="36.0" prefWidth="193.0" promptText="Email..." styleClass="textfield-design" stylesheets="@../css/registration.css" />
+            <ImageView fitHeight="79.0" fitWidth="93.0" layoutX="153.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/userRegistration.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

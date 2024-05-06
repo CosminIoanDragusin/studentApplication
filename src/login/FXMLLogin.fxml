@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="552.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FXMLLoginController">
+   <children>
+      <AnchorPane fx:id="exitImage" layoutX="424.0" prefHeight="552.0" prefWidth="379.0" styleClass="login-bg">
+         <children>
+            <Label layoutX="174.0" layoutY="119.0" text="Sign In">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="105.0" layoutY="178.0" onMouseClicked="#textField" onMouseDragged="#textField" prefHeight="36.0" prefWidth="193.0" promptText="Username" styleClass="textfield-design" stylesheets="@../css/login.css" />
+            <PasswordField fx:id="password" layoutX="107.0" layoutY="238.0" onMouseClicked="#textField" onMouseDragged="#textField" prefHeight="36.0" prefWidth="193.0" promptText="Password" styleClass="textfield-design" stylesheets="@../css/login.css" />
+            <Button fx:id="btnLogin" layoutX="128.0" layoutY="296.0" mnemonicParsing="false" onAction="#Login" prefHeight="64.0" prefWidth="149.0" styleClass="button-design" stylesheets="@../css/login.css" text="Login" />
+            <Hyperlink fx:id="hyperLink" layoutX="139.0" layoutY="396.0" onAction="#ToRegister" styleClass="hypertext-design" stylesheets="@../css/login.css" text="Create new Account">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="85.0" fitWidth="115.0" layoutX="161.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/userLogin.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnExit" layoutX="337.0" layoutY="15.0" mnemonicParsing="false" onAction="#exit" prefHeight="27.0" prefWidth="33.0" styleClass="btnExit" stylesheets="@../css/login.css" />
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="340.0" layoutY="15.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/exit.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="btnExit" />
+                  <String fx:value="exitImage" />
+               </styleClass>
+            </ImageView>
+         </children>
+         <stylesheets>
+            <URL value="@registration.css" />
+            <URL value="@../css/login.css" />
+         </stylesheets>
+      </AnchorPane>
+      <AnchorPane prefHeight="552.0" prefWidth="424.0" styleClass="login-card" stylesheets="@../css/login.css" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="labelProiect" alignment="CENTER" layoutX="72.0" layoutY="67.0" prefHeight="251.0" prefWidth="312.0" text="Proiect" textFill="#1e719a">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

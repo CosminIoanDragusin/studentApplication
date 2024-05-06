@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentDetails.FXMLStudentDetailsController">
+   <children>
+      <GridPane layoutX="205.0" layoutY="91.0" prefHeight="163.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="30.0" prefWidth="112.0" text="Nume">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label fx:id="labelNume" prefHeight="30.0" prefWidth="112.0" GridPane.columnIndex="1" />
+            <Label prefHeight="30.0" prefWidth="112.0" text="Prenume" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label fx:id="labelPrenume" prefHeight="30.0" prefWidth="112.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="30.0" prefWidth="112.0" text="Nota" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label fx:id="labelNota" prefHeight="30.0" prefWidth="112.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label prefHeight="30.0" prefWidth="112.0" text="Materie" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label fx:id="labelMaterie" prefHeight="30.0" prefWidth="112.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label prefHeight="30.0" prefWidth="112.0" text="Email" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label fx:id="labelEmail" prefHeight="30.0" prefWidth="112.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label prefHeight="30.0" prefWidth="112.0" text="Profesor" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label fx:id="labelProfesor" prefHeight="30.0" prefWidth="112.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnBack" layoutX="250.0" layoutY="266.0" mnemonicParsing="false" onAction="#initData" onMouseClicked="#initData" prefHeight="57.0" prefWidth="100.0" text="Back" />
+      <Label alignment="CENTER" layoutX="144.0" layoutY="14.0" prefHeight="66.0" prefWidth="312.0" text="Date Student">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="87.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>
